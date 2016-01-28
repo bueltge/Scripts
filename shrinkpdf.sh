@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# USAGE
+# ./shrinkpdf.sh path/in.pdf path/out.pdf
+
 # http://www.alfredklomp.com/programming/shrinkpdf
 # Licensed under the 3-clause BSD license:
 #
