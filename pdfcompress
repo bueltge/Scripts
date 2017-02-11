@@ -2,6 +2,8 @@
 #
 # pdfcompress ./path/input.pdf
 #
+# More background, hint for parameters
+# @see http://milan.kupcevic.net/ghostscript-ps-pdf/
 
 # Need an input file
 if [ -z $1 ]; then
