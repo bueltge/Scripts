@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# pdfcompress ./path/input.pdf
+#
+
+# Need an input file
+if [ -z $1 ]; then
+	echo 'No input file.'
+	exit 1
+fi
+
+compress() {
+
+	gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf $1
+}
+
+compress $1
+echo 'Compress is done.'
